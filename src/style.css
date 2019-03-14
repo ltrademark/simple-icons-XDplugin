@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #111;
+  background-color: #fff;
+  font-size: calc(5.06878px + 0.88183vw);
+}
+
+.popup-enter-active,
+.popup-leave-active {
+  -webkit-transition: 375ms cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 375ms cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.popup-enter,
+.popup-leave-to {
+  opacity: 0;
+  -webkit-transform: translatey(100%);
+          transform: translatey(100%);
+}
+
+#dialog {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  padding-top: 55px;
+}
+
+#dialog .block {
+  cursor: pointer;
+  width: 100%;
+  height: 100px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  border: 2px solid #ececec;
+  border-radius: 3px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon-search {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.icon-search:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
+}
+
+.icon-search:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/396624/simpleicons.svg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .54;
+}
+
+.icon-search input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  border: 1px solid rgba(238, 238, 238, 0);
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 0 20px;
+  padding-left: 55px;
+}
+
+.icon-search input:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: #eee;
+}
+
+.icon-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-auto-flow: dense;
+}
+
+.icon-grid--item {
+  cursor: pointer;
+  background-color: #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.icon-grid--item > * {
+  margin-top: 0;
+}
+
+.icon-grid--item.selected {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+.icon-grid--item h3 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.icon-grid--item a {
+  display: inline-block;
+  width: 100%;
+}
+
+.icon-grid--item a img {
+  width: 30px;
+}
+
+.notification-toast {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.notification-toast.selection .bubble {
+  width: 100%;
+}
+
+.notification-toast .bubble {
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(18, 18, 18, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(18, 18, 18, 0.2);
+  text-align: center;
+  padding: 20px;
+  color: #222;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.notification-toast .bubble p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
