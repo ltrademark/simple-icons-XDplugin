@@ -1,4 +1,4 @@
-![simple icons](https://cdn.glitch.com/94a91acb-521d-41e5-be37-e8843474659f%2Fsimple-icon.png?1551599029342 =50x50)
+<img src="https://cdn.glitch.com/94a91acb-521d-41e5-be37-e8843474659f%2Fsimple-icon.png?1551599029342" width="50" height="50">
 Simple Icons
 =================
 
